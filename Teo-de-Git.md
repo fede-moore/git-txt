@@ -36,15 +36,14 @@ lo quiero recuperar y                          **git reset --hard  (NOOO)**
 
 que estaba en el commit:                      (**cuando** esta modif en verde)
 
-**git restore <file>** o  **(2)**                          mejor (1-unstage)>(2-version anteior)
-
+**git restore <file>**            **(2)**       mejor (1-unstage)>(2-version anteior)
 **git checkout <file> (viejo!)**
 
 (cuando esta modif en rojo)
 
 
 
-**status** para ver que hay en area 1(rojo) y 2(verde)
+**status** para ver que hay en area 1(rojo) y 2(verde) en staged
 
 
 para comparar:  **git diff <cod commit> <cod commit>** (lines de cambio)  ||  **git diff --name-only <> <>** (archiv name)  || **git diff --word-dif <> <>** (palabras)
