@@ -14,18 +14,19 @@ para inicializar el file  **git init**  (me crea archivos ocultos para el git) (
 
 dir trabajo                                   staging area                                       repositorio
 
+........ <<<   **git rm --cached (file)**     (0 commit)
+unstaged:<<<   **restore --staged (file)**  (hay commit)   **(1)** 
+
 contrasenas:  **git rm --cached (file)**      (no hice push)   **git commit --amend --no-edit** 
                                               (ya hice push)   **git commit -m "..."** (pero quedan los rastros del desastre)
 
 .                     **git rm (file) + git commit** (borra el archivo de todos lados, hace otro, no borra el error)
 
-unstaged:               **restore --staged (file)**  (1)     
+    
      
 Va al anterior commit:      **restore  (file)**                      
-
-??        (si es nuevo vuelve)                                son lo mismo
-
-??        (si ya estaba en repo, saca las modif)              (con todo esto lo elimina del rep)
+        (si es nuevo vuelve)                                son lo mismo
+        (si ya estaba en repo, saca las modif)              (con todo esto lo elimina del rep)
 
 
 
@@ -35,7 +36,7 @@ lo quiero recuperar y                          **git reset --hard  (NOOO)**
 
 que estaba en el commit:                      (**cuando** esta modif en verde)
 
-**git restore <file>** o  (2)                          mejor (1-unstage)>(2-version anteior)
+**git restore <file>** o  **(2)**                          mejor (1-unstage)>(2-version anteior)
 
 **git checkout <file> (viejo!)**
 
