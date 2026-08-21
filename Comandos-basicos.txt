@@ -1,5 +1,0 @@
-tengo que clonar el repo en mi compu: git clone http:....... (sacada de la pag de GitHub)
-
-hago cambio en la compu  --> git push -u  <servidor remoto>  <rama en mi compu>
-traigo los cambios del remoto con  -->  git pull  = fetch + merge (mas control con est
-touch  crea archivoscode .
